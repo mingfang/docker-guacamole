@@ -1,0 +1,4 @@
+#!/bin/bash
+source $(dirname "${BASH_SOURCE[0]}")/helper
+
+docker run --rm -v `pwd`:/docker -it ${IMAGE} bash
